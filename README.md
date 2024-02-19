@@ -5,9 +5,12 @@ This Django project is a web application that calculates the estimated delivery 
 
 ## Requirements
 - Python 3.x
-- Django 3.x
-- Geopy
-- OpenRouteService
+- Django 5.0.2
+- Django Rest Framework (DRF) 3.14.0
+- Geopy 2.4.1
+- OpenRouteService 2.3.3
+- Psycopg2 2.9.9 (for PostgreSQL database)
+- Requests 2.31.0
 
 ## Installation
 1. **Clone this repository to your local machine:**
@@ -29,17 +32,24 @@ This Django project is a web application that calculates the estimated delivery 
     mv .env.example .env
     ```
 2. **Update the `.env` file with your configuration settings, including the OpenRouteService API key.**
+3. **Set up the PostgreSQL database:**
+    - Install PostgreSQL if not already installed.
+    - Create a new database for the project.
+    - Update the `DATABASES` setting in the `settings.py` file with the database name, user, password, and host.
 
-## Running the Application
-1. **Apply migrations to create the database schema:**
+## Database Setup
+1. **Run migrations to create the database schema:**
     ```bash
+    python manage.py makemigrations
     python manage.py migrate
     ```
-2. **Start the Django development server:**
+
+## Running the Application
+1. **Start the Django development server:**
     ```bash
     python manage.py runserver
     ```
-3. **Open a web browser and navigate to `http://127.0.0.1:8000` to access the application.**
+2. **Open a web browser and navigate to `http://127.0.0.1:8000` to access the application.**
 
 ## Usage
 - **Create customers, food menus, and restaurants via the provided APIs or Django admin interface.**
@@ -51,4 +61,7 @@ This Django project is a web application that calculates the estimated delivery 
 - **`/foodmenus/`: CRUD endpoints for managing food menus.**
 - **`/restaurants/`: CRUD endpoints for managing restaurants.**
 - **`/orders/`: CRUD endpoints for managing orders.**
+
+.
+
 
