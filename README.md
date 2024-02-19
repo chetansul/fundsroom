@@ -1,4 +1,4 @@
-# Dynamic Delivery Time Calculator
+# Dynamic Delivery Time Estimation
 
 ## Overview
 This Django project is a web application that calculates the estimated delivery time for orders dynamically based on the distance between the customer's location and the restaurant. It utilizes the OpenRouteService API to calculate the travel time and provides users with accurate delivery time estimates.
