@@ -1,7 +1,7 @@
 import requests
 
 # Replace with your MapmyIndia API key
-MAPPLE_API_KEY = 'b4afc8042f8dcb557a29c9bff6eb47ec'
+MAPPLE_API_KEY = 'b4afc8042f8dcb557a29c*****7ec'
 
 # Origin and destination addresses (replace with your values)
 origin = "wakad"
